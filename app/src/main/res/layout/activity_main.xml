@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/score"
+        android:id="@+id/tracker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Score: 0/0"
@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.92" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/firstnumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
@@ -54,15 +54,15 @@
         app:layout_constraintVertical_bias="0.26999998" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/secondnumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/score"
+        app:layout_constraintBottom_toTopOf="@+id/tracker"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/firstnumber"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -102,13 +102,13 @@
         app:layout_constraintVertical_bias="0.42000002" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/guess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:height="50dp"
         android:ems="10"
+        android:hint="Enter your guess"
         android:inputType="number"
-        android:text="Enter your guess"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.21"
@@ -117,23 +117,24 @@
         app:layout_constraintVertical_bias="0.53" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/answerbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="answerButton"
         android:text="Answer"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/guess"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="@+id/guess"
         app:layout_constraintVertical_bias="0.52" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autoText="false"
-        android:text="blank"
+        android:text=" "
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -142,9 +143,10 @@
         app:layout_constraintVertical_bias="0.65999997" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/resetbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="resetButton"
         android:text="Reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
