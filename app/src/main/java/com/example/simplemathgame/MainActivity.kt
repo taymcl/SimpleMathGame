@@ -129,8 +129,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initialize(){ // Function to choose new random numbers for subtraction questions
-        val num1 = (10.. 100).random() // new random Int between 10 and 100
-        val num2 = (10.. 100).random() // new random Int between 10 and 100
+        val num1 = (11.. 99).random() // new random Int between 10 and 100
+        val num2 = (11.. 99).random() // new random Int between 10 and 100
         if (num1 > num2) { // If first random Int is greater than second random Int
             firstnumber.text = "$num1" // Make the first Int first in equation
             secondnumber.text = "$num2" // Make the second Int second in the equation
